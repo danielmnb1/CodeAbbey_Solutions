@@ -1,0 +1,26 @@
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+let n;
+
+let sum = 0;
+
+rl.question('Ingrese la cantidad de valores a sumar: ', (answer) => {
+  n = parseInt(answer);
+
+  rl.question('Ingrese los valores separados por espacio: ', (values) => {
+    const numbers = values.split(' ').map(Number);
+
+    for (let i = 0; i < n; i++) {
+      sum += numbers[i];
+    }
+
+    console.log('La suma es:', sum);
+
+    rl.close();
+  });
+});
