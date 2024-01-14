@@ -1,0 +1,12 @@
+N = READ()
+
+SUM = 0
+
+FOR i = 1 TO N DO
+
+    VALUE = READ()
+
+    SUM = SUM + VALUE
+END FOR
+
+PRINT(SUM)
