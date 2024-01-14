@@ -1,0 +1,11 @@
+
+n = parseInt(prompt())
+
+values = prompt().split(" ").map(Number)
+
+sum = 0
+
+for value in values
+  sum += value
+
+console.log(sum)
