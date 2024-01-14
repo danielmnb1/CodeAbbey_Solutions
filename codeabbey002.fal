@@ -1,0 +1,8 @@
+N = ReadInt()
+
+sum = 0
+
+for i = 1 to N do
+    value = ReadInt()
+    sum = sum + value
+Write(sum)
